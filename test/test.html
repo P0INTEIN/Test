@@ -2,9 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dasteen.blog — Front-End Development Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+
+
+
 </head>
 <body>
+
+<!-- Header -->
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">Dasteen<span>.blog</span></a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#categories">Category</a>
+            <a href="#about">About Me</a>
+            <a href="#search">🔍 Search</a>
+            <a href="#coffee" class="btn-coffee">☕ Buy Me a Coffee</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div>
+            <h1>Hi, I'm Dasteen<br>Front End Dev</h1>
+            <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc. Make sure you subscribe to get the latest updates.</p>
+            <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                <input type="email" placeholder="Enter your email here...." required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+        <div class="hero-illustration">
+            [ Developer Illustration ]
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section id="categories" class="categories-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Browse The Category</h2>
+            <a href="#" class="see-all">See All Category &gt;</a>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="img/logo-css.pdf" alt="">
+<!--                <div class="category-icon">CSS</div>-->
+                <h3>CSS</h3>
+            </div>
+            <div class="category-card">
+                <img src="img/logo-java.pdf" alt="">
+<!--                <div class="category-icon">JS</div>-->
+                <h3>Javascript</h3>
+            </div>
+            <div class="category-card active">
+                <img src="img/logo-tailwind.pdf" alt="">
+<!--                <div class="category-icon">TW</div>-->
+                <h3>Tailwind</h3>
+            </div>
+            <div class="category-card">
+                <img src="img/logo-vue.pdf" alt="">
+<!--                <div class="category-icon">Vue</div>-->
+                <h3>Vue JS</h3>
+            </div>
+            <div class="category-card">
+                <img src="img/logo-react.pdf" alt="">
+<!--                <div class="category-icon">⚛</div>-->
+                <h3>React JS</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Articles -->
+<section class="articles-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Article</h2>
+            <a href="#" class="see-all">See All Article &gt;</a>
+        </div>
+        <div class="articles-grid">
+            <article class="article-card">
+                <div>
+                    <div class="article-thumb"></div>
+                    <h3>Fundamental of Javascript</h3>
+                </div>
+                <div class="article-meta">
+                    <div class="author-avatar">D</div>
+                    <div class="author-info">
+                        <h4>Dasteen</h4>
+                        <span>Jan 10, 2022 ∙ 3 Min Read</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div>
+                    <div class="article-thumb"></div>
+                    <h3>Grid CSS make your life easier</h3>
+                </div>
+                <div class="article-meta">
+                    <div class="author-avatar">D</div>
+                    <div class="author-info">
+                        <h4>Dasteen</h4>
+                        <span>Jan 10, 2022 ∙ 3 Min Read</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div>
+                    <div class="article-thumb"></div>
+                    <h3>Make animated light mode and dark mode toggle with CSS</h3>
+                </div>
+                <div class="article-meta">
+                    <div class="author-avatar">D</div>
+                    <div class="author-info">
+                        <h4>Dasteen</h4>
+                        <span>Jan 10, 2022 ∙ 3 Min Read</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div>
+                    <div class="article-thumb"></div>
+                    <h3>Make tic tac toe games with react JS</h3>
+                </div>
+                <div class="article-meta">
+                    <div class="author-avatar">D</div>
+                    <div class="author-info">
+                        <h4>Dasteen</h4>
+                        <span>Jan 10, 2022 ∙ 3 Min Read</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="center-btn">
+            <button class="btn-primary">More Article</button>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-banner">
+    <div class="container">
+        <h2>Subscribe For the lastest updates</h2>
+        <p>Subscribe to newsletter and never miss the new post every week.</p>
+        <form class="subscribe-form" onsubmit="event.preventDefault(); alert('You have subscribed to the newsletter!');">
+            <input type="email" placeholder="Enter your email here...." required>
+            <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Dasteen<span>.blog</span></a>
+                <p>Digitaldastin by Dastin Darmawan</p>
+            </div>
+            <div class="footer-col">
+                <h4>Category</h4>
+                <ul>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Tailwind</a></li>
+                    <li><a href="#">React JS</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>About Me</h4>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Achievement</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get in touch</h4>
+                <ul>
+                    <li>+62-8XXX-XXX-XX</li>
+                    <li>demo@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Digitaldastin</span>
+            <span>Made With ❤️ Jakarta, Indonesia</span>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
